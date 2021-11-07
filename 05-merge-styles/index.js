@@ -11,7 +11,7 @@ fs.writeFile(
     (err) => {
       if (err) throw err
   })
-
+// АССИНХРОННАЯ ФУНКЦИЯ, ASYNC !!!!!!! CNTRL + F на 'Sync' выдаст одно совпадение с 'aSYNC'.
   async function createBundle(){
     try {
         const files = await fsPromise.readdir(stylesFolder, {withFileTypes: true});
